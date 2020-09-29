@@ -7,14 +7,10 @@ class ReqCard extends Component {
   }
   render() {
     const { first_name, last_name, email, address, mobile } = this.props.req;
+    const image = this.props.image;
     return (
       <div class="card">
-        <img
-          src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-          class="card-img-top"
-          alt="..."
-          style={{}}
-        ></img>
+      <img src={image} class="card-img-top" alt="..." style={{}}></img>
         <div class="card-body">
           <h5 class="card-title">
             {first_name} {last_name}

@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Axios from "axios";
 import ReqCard from "./ReqCard";
 
+
+const randomImage = "https://picsum.photos/200";
+
 class FeatRequester extends Component {
   constructor(props) {
     super(props);
@@ -36,7 +39,7 @@ class FeatRequester extends Component {
             }}
           >
             {this.state.requesters.map((req, k) => {
-              return <ReqCard req={req} key={k} className="grid-item" />;
+             return <ReqCard req={req} key={k} className="grid-item" image={randomImage} />;
             })}
           </div>
         </div>
